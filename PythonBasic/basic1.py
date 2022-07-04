@@ -12,4 +12,6 @@ a = -7
 print(abs(a))  # 7
 
 # 거듭 제곱
-print(pow(3, 2))  # 9
+a = 3
+b = 2
+print(a ** b)  # 9
