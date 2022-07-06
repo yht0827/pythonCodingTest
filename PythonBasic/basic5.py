@@ -162,3 +162,14 @@ a = [1, 2, 3, 3, 3, 3, 4, 4, 8, 9]
 print(count_by_range(a, 4, 4))  # 2
 # 값이 -1 ~ 3인 범위에 있는 데이터 개수 출력
 print(count_by_range(a, -1, 3))  # 6
+
+# Counter : Python이 제공하는 collections 라는 모듈의 한 class
+# List를 가지고 Counter를 생성하면, Counter는 Key가 이름이고, Value가 count 인 dictionary를 반환
+# Counter class는 상호간의 뺄셈 연산을 지원
+from collections import Counter
+
+participant = ["leo", "kiki", "eden"]
+completion = ["eden", "kiki"]
+
+_dict = Counter(participant) - Counter(completion)
+print(_dict)
