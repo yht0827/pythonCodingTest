@@ -66,3 +66,7 @@ print(a.count(3))  # [1, 2, 3, 3, 4] => 2
 # 8.remove: 해당 값 원소 1개 제거 / O(n)
 a.remove(3)
 print(a)  # [1, 2, 3, 4]
+
+# 9. del : 삭제하고 싶은 값 인덱스로 지정
+del a[1]
+print(a)  # [1, 3, 4]
